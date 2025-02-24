@@ -1,0 +1,12 @@
+#07 String Slice Challenges 04
+
+firstLine = input("Enter the first line of a nursery rhyme: ")
+lineLen = len(firstLine)
+print("This has {} letters in it".format(lineLen))
+
+startNum = int(input("Enter a starting number: "))
+endNum = int(input("Enter an ending number: "))
+
+sliced = firstLine[startNum : endNum]
+
+print(sliced)
