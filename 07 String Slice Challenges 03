@@ -1,0 +1,8 @@
+#07 String Slice Challenges 03
+
+firstName = input("Enter your first name: ").lower()
+lastName = input("Enter your last name: ").lower()
+
+wholeName = firstName + " " + lastName
+
+print(wholeName)
