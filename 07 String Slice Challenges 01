@@ -1,0 +1,5 @@
+#07 String Slice Challenges 01
+
+name = input("Enter your name: ")
+
+print(len(name))
