@@ -1,0 +1,14 @@
+#1D Array/List1 Challenges 04
+
+TV_Programmes = ["Pointless", "The Traitors", "Teletubbies", "Steven's Universe"]
+
+for programmes in TV_Programmes:
+    print(programmes)
+
+new_Programme = input("Enter another TV Program: ")
+location = int(input("Where do you want it inserted? (1-5) ")) - 1
+
+TV_Programmes.insert(location, new_Programme)
+
+for programmes in TV_Programmes:
+    print(programmes)
