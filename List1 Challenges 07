@@ -1,0 +1,13 @@
+#1D Array List1 Challenges 07
+
+integers = [1, 2, 3, 4, 5]
+
+index = int(input("Enter the value in the list that you want to delete (1-5): "))
+index -= 1
+
+user_integer = int(input("Enter an integer of your choice: "))
+
+integers.pop(index)
+integers.insert(index, user_integer)
+
+print(integers)
