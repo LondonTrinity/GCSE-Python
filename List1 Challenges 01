@@ -1,6 +1,6 @@
 #1D Array/List1 Challenges 01
 
-cars = []https://github.com/LondonTrinity/GCSE-Python/tree/main/%231D%20Array
+cars = []
 
 for eachCar in range (3):
     carBrand = input("Enter a car brand: ")
