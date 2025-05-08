@@ -1,0 +1,14 @@
+#1D Array List1 Challenges 06
+
+nums = []
+
+for n in range (3):
+    number = int(input("Enter a number please: "))
+    nums.append(number)
+
+remove = input("Do you want to remove the last number you entered? ")
+
+if remove == "yes":
+    nums.remove(number)
+
+print(nums)
