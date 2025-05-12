@@ -1,0 +1,21 @@
+#16 2D Array Challenges 06
+
+EmptyArray = [
+    [0 for column in range(5)]
+    for row in range(2)
+    ]
+print(EmptyArray)
+
+columns = int(input("Enter the number of columns you want: "))
+rows = int(input("Enter the number of rows you want: "))
+
+index1 = int(input("On which column is the value you want to change? ")) - 1
+index2 = int(input("On which row is the value you want to change? ")) - 1
+value = input("What do you want to change the value to? ")
+
+EmptyArray = [
+    [0 for column in range(columns)]
+    for row in range(rows)
+    ]
+EmptyArray[index1][index2] = value
+print(EmptyArray)
