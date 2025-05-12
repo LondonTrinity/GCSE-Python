@@ -1,0 +1,18 @@
+#16 2D Array Challenges 05
+
+EmptyArray = [
+    [0 for column in range(7)]
+    for row in range (5)
+    ]
+
+print(EmptyArray)
+
+EmptyArray [0][0] = "a"
+column = int(input("Choose the number of columns you want: "))
+row = int(input("Choose the number of rows you want: "))
+
+EmptyArray = [
+    [0 for column in range(column)]
+    for row in range (row)
+    ]
+print(EmptyArray)
