@@ -1,0 +1,9 @@
+#Programming Challenge
+
+import random
+
+def signup (user, password):
+  username = input("Choose your username: ")
+  password = input("Input a password: ")
+    
+    
