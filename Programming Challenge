@@ -2,8 +2,54 @@
 
 import random
 
-def signup (user, password):
-  username = input("Choose your username: ")
-  password = input("Input a password: ")
+def signup (): 
+    username = input("Choose your username: ")
+    password = input("Input a password: ")
+    
+    with open("authentication.txt", "a") as authentication:
+        authentication.write(username + "," + password)
+        authentication.write("")
+    
+    print("User successfully added")
+    
+def login():
+    logged_In = 0
+    while logged_In < 2: 
+        login = input("Do you have an account? ")
+        if login == "yes":
+            username = input("Enter your username>>> ")
+            password = input("Enter your password>>> ")
+            finduser(username, password)
+            logged_In += 1
+        else:
+            signup()
+    
+def finduser (user, password):
+    try:
+        password = password + "\n"
+        
+        with open ("authentication.txt", "r") as authentication:
+            lines = file.readlines()
+            
+            for each_Line in lines:
+                fields = line.split(",")
+                
+                if fields[0] == user and fields [1] == password:
+                    return True
+    
+    except Exception:
+        print("User not found, try again")
+    
+    return False
+    
+def dice_roll ():
+    roll1 = random.randint(1, 6)
+    roll2 = random.randint(1, 6)
+
+def main():
+    login()
+    
+
+main()
     
     
