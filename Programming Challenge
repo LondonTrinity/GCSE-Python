@@ -6,9 +6,9 @@ def signup ():
     username = input("Choose your username: ")
     password = input("Input a password: ")
     
-    with open("authentication.txt", "a") as authentication:
-        authentication.write(username + "#" + password)
-        authentication.write("""
+    with open("authentication.txt", "a") as auth:
+        auth.write(username + "#" + password)
+        auth.write("""
 """)
     print("User successfully added")
     
@@ -25,17 +25,21 @@ def login():
             signup()
     
 def finduser (user, password):
+    
+    with open ("authentication.txt", "r") as auth:
+        lines = len(auth.readlines())
 
-
-    with open ("authentication.txt", "r") as authentication:
-        while False:
-            for line in authentication:
-                line.split("#")  
-                if line[0] == user and line[1] == password:
-                    print("Logged in")
-                    return True
-                else:
-                    return False
+        for line in range(lines):
+            line = str(line)
+            print(line)
+            each_Line = line.split("#")
+            if each_Line[0] == user and each_Line[1] == password:
+                print("Logged in")
+                return True
+                login()
+        print("Login failed")
+                
+                
 
         
 def dice_roll ():
