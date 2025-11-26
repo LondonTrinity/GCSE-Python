@@ -1,0 +1,10 @@
+#15 List01 Challenge02
+
+file = open("names.txt", "w")
+
+for names in range (5):
+    names = input("Enter a name >>> ")
+    file.write(names)
+    file.write("\n")
+
+file.close()
