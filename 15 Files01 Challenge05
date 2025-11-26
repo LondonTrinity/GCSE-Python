@@ -1,0 +1,16 @@
+#15 Files01 Challenge05
+
+file = open("names.txt", "a")
+
+name = input("Enter a name >>> ")
+file.write(name)
+file.write("\n")
+file.close()
+
+file = open("names.txt", "r")
+
+AllNames = file.read()
+print(AllNames)
+
+file.close()
+
