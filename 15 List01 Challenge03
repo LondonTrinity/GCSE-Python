@@ -1,0 +1,6 @@
+#15 List01 Challenge03
+
+file = open("names.txt", "r")
+names = file.read()
+print(names)
+file.close()
