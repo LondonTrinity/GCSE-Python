@@ -1,0 +1,8 @@
+#15 Files01 Challenge04
+
+file = open("names.txt", "r")
+
+names = file.readline()
+print(names)
+
+file.close()
