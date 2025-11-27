@@ -1,0 +1,24 @@
+#15 Files01 Challenge06
+
+file = open("users.txt", "w")
+            
+def information (file):
+    firstName = input("Enter your first name >>> ")
+    lastName = input("Enter your last name >>> ")
+    age = input("Enter your age >>> ")
+
+    file.write(firstName)
+    file.write(" ")
+    file.write(lastName)
+    file.write("\n")
+    file.write(age)
+    file.write("\n")
+
+def loop (file):
+    condition = "y"
+    while condition == "y":
+        information(file)
+        condition = input("Enter another user? y for yes >>> ")
+    file.close()
+
+loop(file)
