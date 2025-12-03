@@ -1,18 +1,33 @@
 #Subprogram1 Challenge 05
 
+def choice1():
+    print("think big chosen")
+
+def choice2():
+    print("think bigger chosen")
+
+def choice3():
+    print("winning chosen")
+
+def choice4():
+    print("winner chosen")
+
+def choice5():
+    print("Exit chosen")
+    print("bye")
+
 def option_Chosen(choice):
 
     if choice == 1:
-        print("think big chosen")
+        choice1()
     elif choice == 2:
-        print("think bigger chosen")
+        choice2()
     elif choice == 3:
-        print("winning chosen")
+        choice3()
     elif choice == 4:
-        print("winner chosen")
+        choice4()
     elif choice == 5:
-        print("Exit chosen")
-        print("bye")
+        choice5()
 
 def choice():
     choice = int(input("Enter a choice >>> "))
@@ -23,12 +38,3 @@ def choice():
 
     option_Chosen(choice)
     
-def menu():
-    print("1) think big")
-    print("2) think bigger")
-    print("3) winning")
-    print("4) winner")
-    print("5) Exit")
-    choice()
-
-menu()
