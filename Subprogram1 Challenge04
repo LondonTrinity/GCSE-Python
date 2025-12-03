@@ -1,0 +1,42 @@
+#Subprogam1 Challenges 04
+
+def creative():
+    print("Creative Selected")
+
+def survival():
+    print("Survival Selected")
+
+def hardcore():
+    print("Hardcore Selected")
+
+def adventure():
+    print("Adventure Selected")
+
+def exiting():
+    print("Exiting...")
+
+def menu():
+    print("1) Creative")
+    print("2) Survival")
+    print("3) Hardcore")
+    print("4) Adventure")
+    print("5) Exit")
+
+    choice = int(input("Enter a choice >>> "))
+
+    while choice > 5 or choice < 1:
+        print("Invalid choice")
+        choice = int(input("Enter a choice >>> "))
+        
+    if choice == 1:
+        creative()
+    elif choice == 2:
+        survival()
+    elif choice == 3:
+        hardcore()
+    elif choice == 4:
+        adventure()
+    elif choice == 5:
+        exiting()
+
+menu()
