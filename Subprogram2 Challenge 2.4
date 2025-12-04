@@ -1,0 +1,82 @@
+#Subprogram2 Challenge 2.4
+
+def menu():
+    print("0 to exit")
+    print("1 for timetables")
+    print("2 for adding")
+    print("3 for multiplication")
+    print("4 for subtraction")
+    print("5 for division")
+    print("6 for MOD")
+    print("7 for DIV")
+    choice()
+
+def choice():
+    choice = int(input("Enter a choice >>> "))
+
+    while choice < 0 or choice > 7:
+        choice = int(input("Enter a valid choice >>> "))
+
+    if choice == 0:
+        print("bye!")
+    elif choice == 1:
+        timetable()
+    elif choice == 2:
+        adding()
+    elif choice == 3:
+        multiply()
+    elif choice == 4:
+        subtract()
+    elif choice == 5:
+        divide()
+    elif choice == 6:
+        mod()
+    elif choice == 7:
+        div()
+
+def timetable():
+    number = int(input("Enter your number >>> "))
+
+    for n in range (13):
+        print(n * number)
+
+    menu()
+
+def adding():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+    print(num1 + num2)
+    menu()
+
+def multiply():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+    print(num1 * num2)
+    menu()
+
+def subtract():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+    print(num1 - num2)
+    menu()
+
+def divide():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+    print(num1 / num2)
+    menu()
+
+def mod():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+    print(num1 % num2)
+    menu()
+
+def div():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+    print(num1 // num2)
+    menu()
+    
+
+menu()
