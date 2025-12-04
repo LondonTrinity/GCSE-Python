@@ -1,0 +1,38 @@
+#Subprogram2 Challenge 2
+
+def menu():
+    print("0 to exit")
+    print("1 for timetables")
+    print("2 for adding")
+    choice()
+
+def choice():
+    choice = int(input("Enter a choice >>> "))
+
+    while choice < 0 or choice > 2:
+        choice = int(input("Enter a valid choice >>> "))
+
+    if choice == 0:
+        print("bye!")
+    elif choice == 1:
+        timetable()
+    elif choice == 2:
+        adding()
+
+def timetable():
+    number = int(input("Enter your number >>> "))
+
+    for n in range (13):
+        print(n * number)
+
+    menu()
+
+def adding():
+    num1 = int(input("Enter the first number >>> "))
+    num2 = int(input("Enter the second number >>> "))
+
+    print(num1 + num2)
+
+    menu()
+
+menu()
