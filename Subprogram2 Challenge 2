@@ -1,0 +1,25 @@
+#Subprogram2 Challenge 1
+
+def timetable():
+    number = int(input("Enter your chosen number >>> "))
+
+    for n in range (13):
+        print(n * number)
+
+def choice():
+    choice = int(input("Enter your choice >>> "))
+
+    while choice < 0 or choice > 1:
+        choice = int(input("Enter a valid choice >>> "))
+
+    if choice == 0:
+        print("bye!")
+    elif choice == 1:
+        timetable()
+
+def menu():
+    print("0 to exit")
+    print("1 for timetables")
+    choice()
+
+menu()
